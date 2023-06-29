@@ -1,1 +1,45 @@
-hola mundo
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3
+$ git init
+Initialized empty Git repository in C:/Users/Solrac/Desktop/Git3/.git/
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (master)
+$ git branch -m
+fatal: branch name required
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (master)
+$ git branch -m main
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git branch miguel
+fatal: not a valid object name: 'main'
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        g.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git add .
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git commit -m "primer commit"
+[main (root-commit) aeb8d11] primer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 g.txt
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git branch miguel
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git checkout miguel
+Switched to branch 'miguel'
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$
