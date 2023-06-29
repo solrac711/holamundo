@@ -43,3 +43,145 @@ Switched to branch 'miguel'
 
 Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
 $
+------------------------------------------------------------------
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3
+$ git init
+Initialized empty Git repository in C:/Users/Solrac/Desktop/Git3/.git/
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (master)
+$ git branch -m
+fatal: branch name required
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (master)
+$ git branch -m main
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git branch miguel
+fatal: not a valid object name: 'main'
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        g.txt
+
+nothing added to commit but untracked files present (use "git add" to track
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git add .
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git commit -m "primer commit"
+[main (root-commit) aeb8d11] primer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 g.txt
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git branch miguel
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (main)
+$ git checkout miguel
+Switched to branch 'miguel'
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ /c/Users/Solrac/Desktop/Git3
+bash: /c/Users/Solrac/Desktop/Git3: Is a directory
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git status
+On branch miguel
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   g.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git commit -a
+hint: Waiting for your editor to close the file... error: cannot spawn code
+error: unable to start editor 'code--wait'
+Please supply the message using either -m or -F option.
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git add g.txt
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git status
+On branch miguel
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   g.txt
+
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git remote add origin https://github.com/solrac711/holamundo.git
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git status
+On branch miguel
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   g.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        JPAEjercicio1.rar
+
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git add JPAEjercicio1.rar
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git status
+On branch miguel
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   JPAEjercicio1.rar
+        modified:   g.txt
+
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git commit -m "Confirmando commit"
+[miguel 2d349f0] Confirmando commit
+ 2 files changed, 45 insertions(+), 1 deletion(-)
+ create mode 100644 JPAEjercicio1.rar
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git commit
+On branch miguel
+nothing to commit, working tree clean
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git status
+On branch miguel
+nothing to commit, working tree clean
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git push origin miguel
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 8.08 MiB | 38.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/solrac711/holamundo.git
+ * [new branch]      miguel -> miguel
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/solrac711/holamundo/pull/new/main
+remote:
+To https://github.com/solrac711/holamundo.git
+ * [new branch]      main -> main
+
+Solrac@C3ntin3l4 MINGW64 ~/Desktop/Git3 (miguel)
+$
+
